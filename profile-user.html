@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/profile.css">1
+    <link rel="website icon" type="png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&family=Work+Sans:wght@400;500&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+<!-- start header -->
+<header>
+    <div class="header">
+        <div class="container">
+            <a class="logo" href="#">
+                <img src="./images/logo.png" alt="">
+                <p>MED<span>DICAL</span></p>
+            </a>
+            <ul class="main-nav">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./services2.html">services</a></li>
+                <li><a href="./contacts.html">contact</a></li>
+                <li><a href="#">other</a>
+                    <!-- Start Megamenu -->
+                    <div class="heding">
+                        <div class="mega-menu" style="left: 0; width: 100%;">
+                            <ul class="links">
+                                <li>
+                                    <a href="./Appointments.html"><i class="fa-regular fa-calendar-check"></i>Appointment </a>
+                                </li>
+                                <li>
+                                    <a href="./about.html"><i class="fa-regular fa-hospital"></i> About</a>
+                                </li>
+                                <li>
+                                    <a href="./doctor.html"><i class="fa-solid fa-user-doctor"></i> Doctor</a>
+                                </li>
+                                <li>
+                                    <a href="./news.html"><i class="fa-regular fa-newspaper"></i> News</a>
+                                </li>
+                                <li>
+                                    <a href="./newsone.html"><i class="far fa-clipboard fa-fw"></i> Fill New</a>
+                                </li>
+                                <li>
+                                    <a href="./contacts.html"><i class="fa-regular fa-comment-dots"></i>Contact</a>
+                                </li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a href="./services.html"><img src="./images/Vector (1).png" alt=""> Free Checkup</a>
+                                </li>
+                                <li>
+                                    <a href="./cardigram.html"><img src="./images/Vector (2).png" alt=""> Cardiogram </a>
+                                </li>
+                                <li>
+                                    <a href="./DAN Testing.html"><img src="./images/Vector.png" alt=""> DNA Testing</a>
+                                </li>
+                                <li>
+                                    <a href="./Blood Bank.html"><img src="./images/Vector (3).png" alt=""> Blood Bank</a>
+                                </li>
+                                <li>
+                                    <a href="./Dermalong.html"><img src="./images/Vector.png" alt=""> Dermalogy</a>
+                                </li>
+                                <li>
+                                    <a href="./Orthopedic.html"><img src="./images/Vector.png" alt=""> Orthopedic</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-user" style="position: relative;"></i></a>
+                    <div class="heding" style="position: relative;">
+                        <div class="mega-menu" style="width: 200px; right:-80px; height: 250px;">
+                            <ul class="links" style="min-width: 150px;">
+                                <li>
+                                    <a href="./profile-user.html"><i class="fa-regular fa-address-card"></i>Profile</a>
+                                </li>
+                                <li>
+                                    <a href="./login.html"><i class="fa-solid fa-truck-medical"></i>Login</a>
+                                </li>
+                                <li>
+                                    <a href="./register.html"><i class="fa-regular fa-registered"></i>Register</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-solid fa-arrow-right-from-bracket" style="color: red;"></i>Log Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+<div class="profile">
+    <div class="container">
+        <h1>Profile</h1>
+        <div class="left">
+                <div class="profile-page">
+                    <form action="">
+                        <div class="overview">
+                            <div class="avatar-box">
+                                <!-- <img src="./images/Dr1.png" alt=""> -->
+                                <div class="dropzone">
+                                    <img src="./image/doctor 1.png" class="upload-icon">
+                                    <input type="file" class="upload-input" name="images" required hidden id="imge">
+                                    <label for="imge"><i class="fa-solid fa-cloud-arrow-up"></i></label>
+                                </div>
+                                <!--  -->
+                                <h3 >Ali h Alajez</h3>
+                                <input type="submit" value="Update">
+                            </div>
+                            <div class="info-box">
+                                    <h4 class="c-grey">General Information</h4>
+                                    <div class="box">
+                                        <div class="fs">
+                                            <span class="c-grey">Full Name:</span>
+                                            <input type="text" name="fullName" value="Ali Hosam" required>
+                                        </div>
+                                        <div class="fs">
+                                            <span class="c-grey">Phone:</span>
+                                            <input type="text" name="Phone" value="0599993332" required>
+                                        </div>
+                                        <div class="fs">
+                                            <span class="c-grey">Birthday:</span>
+                                            <!-- <input type="date" name="Birthday" value="6-5-2000"> -->
+                                            <input type="text" placeholder="4/6/2000" onfocus="(this.type ='date')" onblur="this.type = 'text'" value="4/6/2000">
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="fs">
+                                            <span class="c-grey">Password:</span>
+                                            <input type="text" name="Address" value="password">
+                                        </div>
+                                        <div class="fs">
+                                            <span class="c-grey">Email:</span>
+                                            <input type="text" name="fullName" value="ali123@gmail.com">
+                                        </div>
+                                        <div class="fs">
+                                            <span class="c-grey">Diseases:</span>
+                                            <div class="sp-drop">
+                                                <div class="in">
+                                                    <input type="text" placeholder="Search specialities" readonly >
+                                                    <i class="fa-solid fa-chevron-up i"></i>
+                                                </div>
+                                                <div class="sp-option hide">
+                                                    <div class="control">
+                                                        <input type="checkbox" id="one" required name="list" value="11" >
+                                                        <label for="one">Nose and throt</label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <input type="checkbox" id="two" name="list"  value="22">
+                                                        <label for="two">Heart and blood circulation</label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <input type="checkbox" id="three" name="list" value="33" >
+                                                        <label for="three">Bones</label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <input type="checkbox" id="four" name="list" value="44">
+                                                        <label for="four">Blood diseases</label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <input type="checkbox" id="five" name="list"  value="55">
+                                                        <label for="five">Chroinc disases</label>
+                                                    </div>
+                                                    <div class="control">
+                                                        <input type="checkbox" id="six" name="list" value="66">
+                                                        <label for="six">Other</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+        </div>
+        <div class="right">
+            <!-- start project table  -->
+            <div class="projects">
+                <h2>Booked appointments</h2>
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Department</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Message</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ali hosam Alajez</td>
+                                <td>Neurology</td>
+                                <td>10 May 2023</td>
+                                <td>05-06</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Ali hosam Alajez</td>
+                                <td>Neurology</td>
+                                <td>10 May 2023</td>
+                                <td>05-06</td>
+                                <td>Cum porro officiis ipsum dignissimos, dolore maiores magnam assumenda!</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="projects">
+                <h2>Free medical advice</h2>
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Doctor</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Message</th>
+                                <th>Dr.message</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Ali hosam Alajez</td>
+                                <td>00/00/00</td>
+                                <td>00-00</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, cupiditate? At quas, laudantium dignissimos iure nisi maxime dolore accusamus nobis.</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Ali hosam Alajez</td>
+                                <td>00/00/00</td>
+                                <td>00-00</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, cupiditate? At quas, laudantium dignissimos iure nisi maxime dolore accusamus nobis.</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Ali hosam Alajez</td>
+                                <td>00/00/00</td>
+                                <td>00-00</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, cupiditate? At quas, laudantium dignissimos iure nisi maxime dolore accusamus nobis.</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="projects">
+                <h2>Contact</h2>
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Message</th>
+                                <th>hospitl message</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>00-00</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, cupiditate? At quas, laudantium dignissimos iure nisi maxime dolore accusamus nobis.</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>00-00</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, cupiditate? At quas, laudantium dignissimos iure nisi maxime dolore accusamus nobis.</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td>00/00/00</td>
+                                <td>00-00</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, cupiditate? At quas, laudantium dignissimos iure nisi maxime dolore accusamus nobis.</td>
+                                <td><i class="fa-solid fa-trash"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+<!-- end header -->
+<footer>
+    <div class="container">
+        <div class="logo">
+            <div class="images">
+                <img src="images/Luxi-Hosting-Logo.png" alt="">
+                <img src="images/Meddical.png" alt="">
+            </div>
+            <p>Leading the Way in Medical <br> Execellence, Trusted Care.</p>
+        </div>
+        <div class="links">
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="./Appointments.html">Appointment</a></li>
+                <li><a href="./doctor.html">Doctors</a></li>
+                <li><a href="./services2.html">Services</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><span>Call: (237) 681-812-255</span></li>
+                <li><span>Call: (237) 681-812-255</span></li>
+                <li><span>Call: (237) 681-812-255</span></li>
+                <li><span>Call: (237) 681-812-255</span></li>
+            </ul>
+        </div>
+        <div class="email">
+            <h3>NewsLetter</h3>
+            <form action=""><input type="email" name="" id="" placeholder="Enter Your Email Address">
+                <button><i class="fa-brands fa-facebook-messenger"></i></button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <span>© 2021 Hospital’s name All Rights Reserved by Walaa</span>
+        <div class="socialmedia-icons">
+            <div><i class="fa-brands fa-linkedin-in"></i></div>
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+        </div>
+    </div>
+</footer>
+<!-- end header -->
+<script src="./js/register.js"></script>
+</body>
+</html>
